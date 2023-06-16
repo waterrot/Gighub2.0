@@ -1,0 +1,59 @@
+<!-- item_chat.xml -->
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <!-- Contact Avatar -->
+    <ImageView
+        android:id="@+id/contactImageView"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/contact_image_1"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true" />
+
+    <!-- Contact Name -->
+    <TextView
+        android:id="@+id/contactNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Contact Name 1"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_toEndOf="@+id/contactImageView"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="8dp" />
+
+    <TextView
+        android:id="@+id/messageTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Last message 1"
+        android:textSize="14sp"
+        android:layout_toEndOf="@+id/contactImageView"
+        android:layout_below="@+id/contactNameTextView"
+        android:layout_marginTop="4dp"
+        android:textColor="#757575" />
+
+    <TextView
+        android:id="@+id/timeTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="10:00 AM"
+        android:textSize="12sp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true" />
+
+    <ImageView
+        android:id="@+id/unreadIndicatorImageView"
+        android:layout_width="8dp"
+        android:layout_height="8dp"
+        android:src="@drawable/unread_indicator"
+        android:layout_toEndOf="@+id/contactNameTextView"
+        android:layout_marginStart="4dp"
+        android:layout_centerVertical="true"
+        android:visibility="gone" />
+
+</RelativeLayout>

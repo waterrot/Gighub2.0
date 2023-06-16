@@ -17,6 +17,7 @@
         android:layout_width="285dp"
         android:layout_height="62dp"
         android:layout_marginTop="312dp"
+        android:paddingLeft="10dp"
         android:background="#ffffff"
         android:hint="@string/prompt_email"
         android:inputType="textEmailAddress"
@@ -31,6 +32,7 @@
         android:layout_width="285dp"
         android:layout_height="50dp"
         android:layout_marginTop="44dp"
+        android:paddingLeft="15dp"
         android:background="#ffffff"
         android:hint="@string/prompt_password"
         android:imeActionLabel="@string/action_sign_in_short"
@@ -81,5 +83,23 @@
         tools:layout_editor_absoluteX="92dp"
         tools:layout_editor_absoluteY="59dp"
         tools:srcCompat="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/passwordForget"
+        android:layout_width="287dp"
+        android:layout_height="25dp"
+        android:text="Forgot your password?"
+        android:gravity="center"
+        tools:layout_editor_absoluteX="47dp"
+        tools:layout_editor_absoluteY="492dp" />
+
+    <TextView
+        android:id="@+id/registerbutton"
+        android:layout_width="287dp"
+        android:layout_height="25dp"
+        android:gravity="center"
+        android:text="register now!"
+        tools:layout_editor_absoluteX="37dp"
+        tools:layout_editor_absoluteY="626dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
