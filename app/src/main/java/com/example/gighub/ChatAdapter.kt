@@ -16,25 +16,8 @@ import android.view.ViewGroup
 import android.view.LayoutInflater
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.gighub.Contact
 
-
-/* contact data */
-class DataActivity : AppCompatActivity() {
-    fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.chat_overview)
-
-        val recyclerView: RecyclerView = findViewById(R.id.chatList)
-        val contacts: List<Contact> = listOf(
-            Contact("John Doe", "Hello!"),
-            Contact("Jane Smith", "Hi there!"),
-            Contact("Alex Johnson", "Hey, how are you?")
-        )
-
-        val adapter = ChatAdapter(contacts)
-        recyclerView.adapter = adapter
-    }
-}
 
 /* code to make the overview page work */
 class ChatAdapter(private val contacts: List<Contact>) : RecyclerView.Adapter<ChatAdapter.ViewHolder>() {
@@ -47,8 +30,7 @@ class ChatAdapter(private val contacts: List<Contact>) : RecyclerView.Adapter<Ch
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
         val contact = contacts[position]
 
-        holder.contactNameTextView.text = contact.name
-        holder.messageTextView.text = contact.lastMessage
+        holder.bind(contact)
     }
 
     override fun getItemCount(): Int {
@@ -56,7 +38,12 @@ class ChatAdapter(private val contacts: List<Contact>) : RecyclerView.Adapter<Ch
     }
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
-        val contactNameTextView: TextView = itemView.findViewById(R.id.contactNameTextView)
-        val messageTextView: TextView = itemView.findViewById(R.id.messageTextView)
+        private val contactNameTextView: TextView = itemView.findViewById(R.id.contactNameTextView)
+        private val messageTextView: TextView = itemView.findViewById(R.id.messageTextView)
+
+        fun bind(contact: Contact) {
+            contactNameTextView.text = contact.name
+            messageTextView.text = contact.lastMessage
+        }
     }
 }

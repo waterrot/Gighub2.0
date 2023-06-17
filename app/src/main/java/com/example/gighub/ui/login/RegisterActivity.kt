@@ -13,7 +13,6 @@ import android.view.inputmethod.EditorInfo
 import android.widget.EditText
 import android.widget.Toast
 import com.example.gighub.databinding.ActivityRegisterBinding
-
 import com.example.gighub.R
 
 class RegisterActivity : AppCompatActivity() {
@@ -27,29 +26,29 @@ class RegisterActivity : AppCompatActivity() {
         binding = ActivityRegisterBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val username = binding.username
-        val password = binding.password
-        val login = binding.login
+        val username = binding.usernameRegister
+        val password = binding.passwordRegister
+        val login = binding.signUpButtonRegister
         val loading = binding.loading
 
         loginViewModel = ViewModelProvider(this, LoginViewModelFactory())
             .get(LoginViewModel::class.java)
 
-        loginViewModel.loginFormState.observe(this@LoginActivity, Observer {
+        loginViewModel.loginFormState.observe(this, Observer {
             val loginState = it ?: return@Observer
 
             // disable login button unless both username / password is valid
-            login.isEnabled = loginState.isDataValid
+            login?.isEnabled = loginState.isDataValid
 
             if (loginState.usernameError != null) {
-                username.error = getString(loginState.usernameError)
+                username?.error = getString(loginState.usernameError)
             }
             if (loginState.passwordError != null) {
-                password.error = getString(loginState.passwordError)
+                password?.error = getString(loginState.passwordError)
             }
         })
 
-        loginViewModel.loginResult.observe(this@LoginActivity, Observer {
+        loginViewModel.loginResult.observe(this, Observer {
             val loginResult = it ?: return@Observer
 
             loading.visibility = View.GONE
@@ -61,47 +60,50 @@ class RegisterActivity : AppCompatActivity() {
             }
             setResult(Activity.RESULT_OK)
 
-            //Complete and destroy login activity once successful
+            // Complete and destroy login activity once successful
             finish()
         })
 
-        username.afterTextChanged {
+        username?.afterTextChanged {
             loginViewModel.loginDataChanged(
                 username.text.toString(),
-                password.text.toString()
+                password?.text.toString()
             )
         }
 
-        password.apply {
+        password?.apply {
             afterTextChanged {
                 loginViewModel.loginDataChanged(
-                    username.text.toString(),
-                    password.text.toString()
+                    username?.text.toString(),
+                    password?.text.toString()
                 )
             }
 
             setOnEditorActionListener { _, actionId, _ ->
                 when (actionId) {
-                    EditorInfo.IME_ACTION_DONE ->
+                    EditorInfo.IME_ACTION_DONE -> {
                         loginViewModel.login(
-                            username.text.toString(),
-                            password.text.toString()
+                            username?.text.toString(),
+                            password?.text.toString()
                         )
-                }
-                false
-            }
+                        true
+                    }
 
-            login.setOnClickListener {
-                loading.visibility = View.VISIBLE
-                loginViewModel.login(username.text.toString(), password.text.toString())
+                    else -> false
+                }
             }
+        }
+
+        login?.setOnClickListener {
+            loading.visibility = View.VISIBLE
+            loginViewModel.login(username?.text.toString(), password?.text.toString())
         }
     }
 
     private fun updateUiWithUser(model: LoggedInUserView) {
         val welcome = getString(R.string.welcome)
         val displayName = model.displayName
-        // TODO : initiate successful logged in experience
+        // TODO: Initiate successful logged in experience
         Toast.makeText(
             applicationContext,
             "$welcome $displayName",
