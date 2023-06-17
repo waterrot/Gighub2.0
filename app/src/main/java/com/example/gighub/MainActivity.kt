@@ -1,6 +1,8 @@
 package com.example.gighub
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.fragment.findNavController
 import androidx.navigation.ui.AppBarConfiguration
@@ -31,6 +33,14 @@ class MainActivity : AppCompatActivity() {
         }
         if (navController != null) {
             navView.setupWithNavController(navController)
+        }
+
+        /* go to chat */
+        val buttonToChat = findViewById<Button>(R.id.buttonGoToChat)
+
+        buttonToChat.setOnClickListener {
+            val intent = Intent(this, ChatOverviewActivity::class.java)
+            startActivity(intent)
         }
     }
 }
