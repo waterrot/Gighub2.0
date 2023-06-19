@@ -12,7 +12,7 @@ class DataActivity : AppCompatActivity() {
 
         val recyclerView: RecyclerView = findViewById(R.id.chatList)
         val contacts: List<Contact> = listOf(
-            Contact("John Doe", "Hello!"),
+            Contact("BAE", "Hello!"),
             Contact("Jane Smith", "Hi there!"),
             Contact("Alex Johnson", "Hey, how are you?")
         )
