@@ -1,47 +1,41 @@
-package com.example.gighub
-
 import android.os.Bundle
-import androidx.activity.ComponentActivity
+import android.widget.Button
+import android.widget.EditText
+import android.widget.ListView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.activity.compose.setContent
-import androidx.compose.foundation.layout.fillMaxSize
-import androidx.compose.material3.MaterialTheme
-import androidx.compose.material3.Surface
-import androidx.compose.material3.Text
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.Modifier
-import androidx.compose.ui.tooling.preview.Preview
-import com.example.gighub.ui.theme.GighubTheme
+import com.example.gighub.R
 
 class ChatActivity : AppCompatActivity() {
+
+    private val messageList = mutableListOf<Message>()
+    private lateinit var messageAdapter: MessageAdapter
+
+    private lateinit var messageEditText: EditText
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContent {
-            GighubTheme {
-                // A surface container using the 'background' color from the theme
-                Surface(
-                    modifier = Modifier.fillMaxSize(),
-                    color = MaterialTheme.colorScheme.background
-                ) {
-                    Greeting2("Android")
-                }
+        setContentView(R.layout.message_list_activity)
+
+        // Initialize views
+        val sendButton = findViewById<Button>(R.id.button_gchat_send)
+        messageEditText = findViewById(R.id.edit_gchat_message)
+        val chatListView = findViewById<ListView>(R.id.layout_group_chat)
+
+        // Create adapter and attach it to the ListView
+        messageAdapter = MessageAdapter(this, messageList)
+        chatListView.adapter = messageAdapter
+
+        // Handle send button click
+        sendButton.setOnClickListener {
+            val messageText = messageEditText.text.toString().trim()
+            if (messageText.isNotEmpty()) {
+                val message = Message("You", messageText)
+                messageList.add(message)
+                messageAdapter.notifyDataSetChanged()
+                messageEditText.text.clear()
             }
         }
     }
 }
 
-@Composable
-fun Greeting2(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
-}
-
-@Preview(showBackground = true)
-@Composable
-fun GreetingPreview2() {
-    GighubTheme {
-        Greeting2("Android")
-    }
-}
+data class Message(val sender: String, val message: String)

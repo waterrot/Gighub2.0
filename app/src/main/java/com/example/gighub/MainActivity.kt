@@ -1,5 +1,6 @@
 package com.example.gighub
 
+import ChatActivity
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
@@ -40,6 +41,14 @@ class MainActivity : AppCompatActivity() {
 
         buttonToChat.setOnClickListener {
             val intent = Intent(this, ChatOverviewActivity::class.java)
+            startActivity(intent)
+        }
+
+        /* go to chatting */
+        val buttonGoToChatting = findViewById<Button>(R.id.buttonGoToChatting)
+
+        buttonGoToChatting.setOnClickListener {
+            val intent = Intent(this, ChatActivity::class.java)
             startActivity(intent)
         }
     }
