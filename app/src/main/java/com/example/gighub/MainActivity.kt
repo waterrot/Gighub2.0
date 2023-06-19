@@ -66,5 +66,13 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, LoginActivity::class.java)
             startActivity(intent)
         }
+
+        /* go to discovery */
+        val buttonGoToDiscovery = findViewById<Button>(R.id.buttonGoToDiscovery)
+
+        buttonGoToDiscovery.setOnClickListener {
+            val intent = Intent(this, DiscoveryActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

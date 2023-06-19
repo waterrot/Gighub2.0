@@ -46,7 +46,7 @@
                 android:gravity="center"
                 android:textStyle="bold"                />
             <TextView
-                android:id="@+id/textView"
+                android:id="@+id/linkRegister"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="16dp"
@@ -206,7 +206,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/rounded_edittext"
-                        android:hint="@string/edit_text_hint"
                         android:padding="1dp" />
 
 

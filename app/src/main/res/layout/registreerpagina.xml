@@ -11,21 +11,21 @@
         android:id="@+id/imageView"
         android:layout_width="191dp"
         android:layout_height="185dp"
-        tools:layout_editor_absoluteX="99dp"
-        tools:layout_editor_absoluteY="40dp"
-        tools:srcCompat="@drawable/logogighub"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.058"
+        tools:srcCompat="@drawable/logogighub" />
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="200dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginEnd="16dp"
         app:cardBackgroundColor="@android:color/white"
-        app:cardElevation="2dp"
         app:cardCornerRadius="16dp"
-        tools:ignore="MissingConstraints">
+        app:cardElevation="2dp"
+        tools:layout_editor_absoluteX="16dp">
 
     </androidx.cardview.widget.CardView>
 
@@ -36,9 +36,10 @@
         android:background="@drawable/rounded_edittext"
         android:hint="Volledige naam.."
         android:padding="10dp"
-        tools:layout_editor_absoluteX="75dp"
-        tools:layout_editor_absoluteY="253dp"
-        tools:ignore="MissingConstraints" />
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="253dp" />
 
     <EditText
         android:id="@+id/editTextUsername"
@@ -118,12 +119,13 @@
         tools:layout_editor_absoluteY="621dp" />
 
     <LinearLayout
+        android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="657dp"
-        tools:ignore="MissingConstraints">
+        tools:layout_editor_absoluteY="657dp">
 
         <Button
             android:layout_width="140dp"

@@ -3,6 +3,7 @@ package com.example.gighub
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
@@ -22,6 +23,14 @@ class LoginActivity : ComponentActivity() {
 
         buttonGoToHomeArtist.setOnClickListener {
             val intent = Intent(this, ArtistHomeActivity::class.java)
+            startActivity(intent)
+        }
+
+        /* go to register */
+        val buttonGoToRegister = findViewById<TextView>(R.id.linkRegister)
+
+        buttonGoToRegister.setOnClickListener {
+            val intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)
         }
     }

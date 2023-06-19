@@ -79,6 +79,7 @@
     </FrameLayout>
 
     <ImageView
+        android:id="@+id/goNextDiscovery"
         android:layout_width="72dp"
         android:layout_height="72dp"
         android:src="@drawable/next_svgrepo_com"

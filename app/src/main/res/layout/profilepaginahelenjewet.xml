@@ -204,7 +204,6 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/rounded_edittext"
-                        android:hint="@string/edit_text_hint5"
                         android:padding="1dp" />
 
 

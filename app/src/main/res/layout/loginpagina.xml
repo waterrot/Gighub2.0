@@ -91,7 +91,21 @@
         app:layout_constraintVertical_bias="0.713" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/linkRegister"
+        android:layout_width="409dp"
+        android:layout_height="28dp"
+        android:gravity="center"
+        android:text="Registeer nu!"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView"
+        app:layout_constraintVertical_bias="0.82"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <TextView
+        android:id="@+id/textView3"
         android:layout_width="409dp"
         android:layout_height="28dp"
         android:gravity="center"
@@ -101,7 +115,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintTop_toTopOf="@+id/cardView"
         app:layout_constraintVertical_bias="0.77"
-        tools:layout_editor_absoluteX="0dp"
-        tools:ignore="MissingConstraints" />
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

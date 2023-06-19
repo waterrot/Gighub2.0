@@ -18,4 +18,9 @@
     <string name="title_activity_send_message">ActivitySendMessage</string>
     <string name="title_activity_chat_adapter">ChatAdapter</string>
     <string name="title_activity_chat_overview">ChatOverviewActivity</string>
+    <string name="title_activity_discovery">DiscoveryActivity</string>
+    <string name="title_activity_discovery_two">DiscoveryTwoActivity</string>
+    <string name="title_activity_discovery_two_like">DiscoveryTwoLikeActivity</string>
+    <string name="title_activity_discovery_two_favorite">DiscoveryTwoFavoriteActivity</string>
+    <string name="title_activity_profile_one">ProfileOneActivity</string>
 </resources>

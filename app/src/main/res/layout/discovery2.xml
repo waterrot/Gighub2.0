@@ -28,6 +28,7 @@
             android:layout_gravity="center">
 
             <ImageView
+                android:id="@+id/goToProfile"
                 android:layout_width="56dp"
                 android:layout_height="56dp"
                 android:src="@drawable/profile_pifcture2"
@@ -57,6 +58,7 @@
         android:paddingBottom="128dp">
 
         <ImageView
+            android:id="@+id/giveItAStar"
             android:layout_width="56dp"
             android:layout_height="56dp"
             android:src="@drawable/star_svgrepo_com"
@@ -72,6 +74,7 @@
         android:paddingBottom="128dp">
 
         <ImageView
+            android:id="@+id/goFavorite"
             android:layout_width="56dp"
             android:layout_height="56dp"
             android:src="@drawable/heart_svgrepo_com"
