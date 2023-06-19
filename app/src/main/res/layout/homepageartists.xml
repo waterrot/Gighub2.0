@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="0dp"
+        android:background="#93BADD" >
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/navigation_menu"
+        app:itemIconSize="38dp"
+        app:itemIconTint="@color/white"
+        app:backgroundTint="#93BADD"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="start|top"
+                            android:src="@drawable/trash_can"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="8dp" />
+
+                        <EditText
+                            android:autofillHints="name"
+                            android:inputType="text"
+                            android:layout_width="0dp"
+                            android:layout_height="48dp"
+                            android:layout_weight="1"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="20dp"
+                            android:layout_gravity="center|top"
+                            android:text=" Zoeken..."
+                            android:layout_marginTop="8dp" />
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_gravity="end|top"
+                            android:src="@drawable/bookmark"
+                            android:layout_marginEnd="12dp"
+                            android:layout_marginTop="8dp" />
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/filtersButtonHomeArtist"
+                        android:layout_width="80dp"
+                        android:layout_height="48dp"
+                        android:text="filters"
+                        android:textColor="#000000"
+                        android:layout_gravity="start"
+                        android:layout_marginStart="50dp"
+                        android:textSize="10sp"
+                        android:backgroundTint="#d7d7d7" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- First CardView -->
+                <androidx.cardview.widget.CardView
+                    android:layout_width="378dp"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="16dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardBackgroundColor="#FFFFFF">
+
+                    <!-- Content of the first CardView -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/iconCompanyHomeArtistOne"
+                            android:layout_width="110dp"
+                            android:layout_height="100dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="2dp"
+                            android:src="@drawable/barmashlogo" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/iconCompanyHomeArtistOne"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="12dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/mainTextCompanyHomeArtistOne"
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:text="Rockers gezocht voor Bar Mash!"
+                                android:textStyle="bold"
+                                android:textSize="20sp"
+                                android:textColor="#333377"/>
+
+                            <TextView
+                                android:id="@+id/infoTextCompanyHomeArtistOne"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Elke eerste maandag van de maand organiseren we Bennies Unplugged in Bar Mash! Een gratis toegankelijke semi-akoestische avond waar de vetste - normaal gesproken hardste - bands van.. " />
+
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/buttonLocationHomeArtistOne"
+                            android:layout_width="90dp"
+                            android:layout_height="27dp"
+                            android:layout_below="@id/iconCompanyHomeArtistOne"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Apeldoorn"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:textColor="#ffffff"
+                            android:gravity="center"
+                            android:background="#9E4FC6" />
+
+                        <TextView
+                            android:id="@+id/buttonDateHomeArtistOne"
+                            android:layout_width="90dp"
+                            android:layout_height="27dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="140dp"
+                            android:textSize="10sp"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:text="25/06"
+                            android:background="#9E4FC6"/>
+
+                    </RelativeLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="378dp"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="16dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardBackgroundColor="#FFFFFF">
+
+                    <!-- Content of the first CardView -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/iconCompanyHomeArtistTwo"
+                            android:layout_width="110dp"
+                            android:layout_height="100dp"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="6dp"
+                            android:layout_marginTop="2dp"
+                            android:src="@drawable/cocktail" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/iconCompanyHomeArtistTwo"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="12dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/mainTextCompanyHomeArtistTwo"
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:text="Rockers gezocht voor Bar Mash!"
+                                android:textStyle="bold"
+                                android:textSize="20sp"
+                                android:textColor="#333377"/>
+
+                            <TextView
+                                android:id="@+id/infoTextCompanyHomeArtistTwo"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Op zaterdag 8 juli vindt midden in het centrum van Arnhem, op de centrale Markt, het culinaire evenement Arnhem Proeft! plaats. Naast de lekkerste gerechten en hippe drankjes vanuit de.. " />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/buttonLocationHomeArtistTwo"
+                            android:layout_width="90dp"
+                            android:layout_height="27dp"
+                            android:layout_below="@id/iconCompanyHomeArtistTwo"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Arhem"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:textColor="#ffffff"
+                            android:gravity="center"
+                            android:background="#9E4FC6" />
+
+                        <TextView
+                            android:id="@+id/buttonDateHomeArtistTwo"
+                            android:layout_width="90dp"
+                            android:layout_height="27dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="140dp"
+                            android:textSize="10sp"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:text="08/07"
+                            android:background="#9E4FC6"/>
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="378dp"
+                    android:layout_height="180dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="16dp"
+                    app:cardCornerRadius="16dp"
+                    app:cardBackgroundColor="#FFFFFF">
+
+                    <!-- Content of the first CardView -->
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <ImageView
+                            android:id="@+id/iconCompanyHomeArtistThree"
+                            android:layout_width="110dp"
+                            android:layout_height="100dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="2dp"
+                            android:src="@drawable/barmashlogo" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toEndOf="@id/iconCompanyHomeArtistThree"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="12dp"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/mainTextCompanyHomeArtistThree"
+                                android:layout_width="200dp"
+                                android:layout_height="wrap_content"
+                                android:text="Rockers gezocht voor Bar Mash!"
+                                android:textStyle="bold"
+                                android:textSize="20sp"
+                                android:textColor="#333377"/>
+
+                            <TextView
+                                android:id="@+id/infoTextCompanyHomeArtistThree"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Elke eerste maandag van de maand organiseren we Bennies Unplugged in Bar Mash! Een gratis toegankelijke semi-akoestische avond waar de vetste - normaal gesproken hardste - bands van.. " />
+
+                        </LinearLayout>
+
+                        <TextView
+                            android:id="@+id/buttonLocationHomeArtistThree"
+                            android:layout_width="90dp"
+                            android:layout_height="27dp"
+                            android:layout_below="@id/iconCompanyHomeArtistThree"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Apeldoorn"
+                            android:textSize="10sp"
+                            android:textStyle="bold"
+                            android:textColor="#ffffff"
+                            android:gravity="center"
+                            android:background="#9E4FC6" />
+
+                        <TextView
+                            android:id="@+id/buttonDateHomeArtistThree"
+                            android:layout_width="90dp"
+                            android:layout_height="27dp"
+                            android:layout_marginStart="12dp"
+                            android:layout_marginTop="140dp"
+                            android:textSize="10sp"
+                            android:textColor="#ffffff"
+                            android:textStyle="bold"
+                            android:gravity="center"
+                            android:text="25/06"
+                            android:background="#9E4FC6"/>
+
+                    </RelativeLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+                <!-- Add your content for the new square here -->
+
+            </LinearLayout>
+
+            <!-- Add your content inside this FrameLayout -->
+
+        </LinearLayout>
+
+
+
+
+    </ScrollView>
+</RelativeLayout>

@@ -50,5 +50,13 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, ChatActivity::class.java)
             startActivity(intent)
         }
+
+        /* go to Home of the artist */
+        val buttonGoToHomeArtist = findViewById<Button>(R.id.buttonGoToHomeArtist)
+
+        buttonGoToHomeArtist.setOnClickListener {
+            val intent = Intent(this, ArtistHomeActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
