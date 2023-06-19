@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="Mainactivity">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/navigation"
+        android:layout_marginBottom="0dp"
+        android:background="#93BADD" >
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="0dp"
+        app:menu="@menu/navigation_menu"
+        android:background="#93BADD"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <ImageView
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_height="221dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp"
+                android:src="@drawable/folder"/>
+
+
+            <TextView
+                android:id="@+id/usernameAccount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/videoView"
+                android:layout_marginTop="16dp"
+                android:text="Naam"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:textStyle="bold"                />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="profielnaam"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="..."
+                            android:layout_marginEnd="30dp"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="10dp"
+                            android:padding="4dp"
+                            android:backgroundTint="#C3ADCE"
+                            android:textSize="11sp"
+                            />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="..."
+                            android:layout_marginEnd="30dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="10dp"
+                            android:padding="4dp"
+                            android:backgroundTint="#C3ADCE"
+                            android:textSize="11sp"/>
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="30dp"
+                            android:text="..."
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="10dp"
+                            android:padding="4dp"
+                            android:backgroundTint="#C3ADCE"
+                            android:textSize="11sp"/>
+
+                    </LinearLayout>
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="Wie zijn wij?"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/bioAccount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:hint="Voeg hier een leuke tekst toe waarin jullie uitleggen wie jullie zijn, waar jullie voor staan en wat voor muziek jullie maken. Wees creatief en overtuig de menigte! "
+                        android:padding="10dp"
+                        android:fontFamily="sans-serif" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="Ervaring"
+                        android:textStyle="bold"/>
+
+                    <EditText
+                        android:id="@+id/experienceAccount"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:hint="Schrijf hier jullie ervaringen op, denk hierbij bijvoorbeeld aan opleidingen, eerdere optredens of andere muziekale aangelegenheden, "
+                        android:padding="10dp" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Overige details"
+                        android:textStyle="bold"/>
+
+                    <EditText
+                        android:id="@+id/editText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_edittext"
+                        android:padding="1dp" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint=".... "
+                android:drawableStart="@drawable/phone"
+                android:drawablePadding="20dp"
+                android:padding="10dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="70dp">
+
+                <EditText
+                    android:id="@+id/instaIconAccount"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/circle_background"
+                    android:drawableStart="@drawable/instagram_fill"
+                    android:drawablePadding="20dp"
+                    android:padding="10dp" />
+
+                <EditText
+                    android:id="@+id/youtubeIconAccount"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/circle_background"
+                    android:drawableStart="@drawable/youtube"
+                    android:drawablePadding="20dp"
+                    android:padding="10dp" />
+                <EditText
+                    android:id="@+id/spotifyIconAccount"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/circle_background"
+                    android:drawableStart="@drawable/spotify"
+                    android:drawablePadding="20dp"
+                    android:padding="10dp" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/secondButton"
+                android:layout_width="150dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="120dp"
+                android:layout_marginTop="40dp"
+                android:text="Klaar!"
+                android:backgroundTint="#FDFD96"
+                android:textStyle="bold"
+                android:textSize="12sp"
+                android:textColor="#000000"/>
+
+            
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

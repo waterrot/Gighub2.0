@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#93BADD">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="191dp"
+        android:layout_height="185dp"
+        tools:layout_editor_absoluteX="99dp"
+        tools:layout_editor_absoluteY="40dp"
+        tools:srcCompat="@drawable/logogighub"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="@android:color/white"
+        app:cardElevation="2dp"
+        app:cardCornerRadius="16dp"
+        tools:ignore="MissingConstraints">
+
+    </androidx.cardview.widget.CardView>
+
+    <EditText
+        android:id="@+id/editTextFullName"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Volledige naam.."
+        android:padding="10dp"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="253dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Gebruikersnaam.."
+        android:padding="10dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/editTextFullName"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="380dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextEmail"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Adres.."
+        android:padding="10dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/editTextUsername"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="459dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextPassword"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Wachtwoord.."
+        android:padding="10dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/editTextEmail"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="538dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextConfirmPassword"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Bevestig wachtwoord.."
+        android:padding="10dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/editTextPassword"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="617dp"
+        tools:ignore="MissingConstraints" />
+
+    <EditText
+        android:id="@+id/editTextDateOfBirth"
+        android:layout_width="250dp"
+        android:layout_height="48dp"
+        android:background="@drawable/rounded_edittext"
+        android:hint="Geboortedatum.."
+        android:padding="10dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/editTextConfirmPassword"
+        tools:layout_editor_absoluteX="75dp"
+        tools:layout_editor_absoluteY="696dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/mainTextView"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Aanmelden als:"
+        android:textColor="#333377"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="125dp"
+        tools:layout_editor_absoluteY="621dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteX="100dp"
+        tools:layout_editor_absoluteY="657dp"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="48dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="60dp"
+            android:backgroundTint="#C3ADCE"
+            android:text="Artiest"
+            android:textColor="#FFFFFF"
+            android:textSize="15sp"
+            tools:layout_editor_absoluteX="75dp"
+            tools:layout_editor_absoluteY="696dp" />
+
+
+        <Button
+            android:layout_width="140dp"
+            android:layout_height="48dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="10dp"
+            android:backgroundTint="#FDFD96"
+            android:text="Venue"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -37,7 +37,7 @@
             android:exported="false"
             android:label="@string/title_activity_register" />
         <activity
-            android:name=".LoginPage"
+            android:name=".LoginActivity"
             android:exported="false"
             android:label="@string/title_activity_login_page"
             android:theme="@style/Theme.Gighub" />
@@ -45,6 +45,11 @@
             android:name=".ui.login.LoginActivity"
             android:exported="false"
             android:label="@string/title_activity_login" />
+        <activity
+            android:name=".ArtistHomeActivity"
+            android:exported="false"
+            android:label="ArtistHomeActivity"/>
+
         <activity
             android:name=".MainActivity"
             android:exported="true"

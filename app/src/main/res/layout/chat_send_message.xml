@@ -35,7 +35,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
-        android:text="John Grady Cole"
+        android:text="Bar Mash"
         android:textSize="16sp"
         app:layout_constraintStart_toEndOf="@+id/image_gchat_profile_other"
         app:layout_constraintTop_toBottomOf="@+id/text_gchat_date_other" />
@@ -67,7 +67,7 @@
                 android:paddingLeft="12dp"
                 android:paddingTop="8dp"
                 android:paddingRight="12dp"
-                android:text="Message"
+                android:text="Hi, zou je interesse hebben om langs te komen voor een gesprek?"
                 android:textColor="#000000"
                 android:textSize="16sp" />
         </LinearLayout>
@@ -89,12 +89,12 @@
         android:id="@+id/text_gchat_date_me"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="132dp"
+        android:layout_marginTop="170dp"
         android:paddingStart="8dp"
         android:paddingTop="4dp"
         android:paddingEnd="8dp"
         android:paddingBottom="4dp"
-        android:text="June 10"
+        android:text="June 11"
         android:textColor="#C0C0C0"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -127,7 +127,7 @@
                 android:paddingLeft="12dp"
                 android:paddingTop="8dp"
                 android:paddingRight="12dp"
-                android:text="This is a Message"
+                android:text="Ja lijkt me erg leuk! Wanneer schikt u?"
                 android:textColor="#ffffff"
                 android:textSize="16sp" />
         </LinearLayout>

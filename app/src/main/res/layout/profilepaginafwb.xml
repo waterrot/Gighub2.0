@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="0dp"
+        android:background="#93BADD" >
+    </FrameLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_height="221dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp" />
+
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/videoView"
+                android:layout_marginTop="16dp"
+                android:text="FWB band"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:textStyle="bold"                />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="friendswithbenefitsgighub"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="classic"
+                            android:layout_marginEnd="30dp"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="10dp"
+                            android:padding="4dp"
+                            android:backgroundTint="#9E4FC6"
+                            android:textSize="11sp"
+                            />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="original"
+                            android:layout_marginEnd="30dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="10dp"
+                            android:padding="4dp"
+                            android:backgroundTint="#9E4FC6"
+                            android:textSize="11sp"/>
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="30dp"
+                            android:text="party"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="10dp"
+                            android:padding="4dp"
+                            android:backgroundTint="#9E4FC6"
+                            android:textSize="11sp"/>
+
+                    </LinearLayout>
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="Wie zijn wij?"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/editText1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:hint="Wij zijn de Friends With Benefits band! De naam zegt het al een beetje; we zijn een hechte vrienden groep uit Bilthoven. We zijn gevormd uit oud leerlingen van het Nieuwe Lyceum die samen een gezamelijke passie delen: muziek. Wij focussen ons vooral op de oude klassiekers, denk aan bands zoals: Dire Straits, The Beatles, CCR en Queen. Ook spelen we nieuwere nummers van bands zoals: Blof, Maneskin, De Dijk en Acda en de Munnik. "
+                        android:padding="10dp"
+                        android:fontFamily="sans-serif" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Ervaring"
+                        android:textStyle="bold"/>
+
+                    <EditText
+                        android:id="@+id/textervaring"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:hint="We hebben al meerdere keren in ’T Pothuys opgetreden en worden ook vaak gevraagd voor bruiloften en feestjes.  We zijn al meer dan 5 jaar bij elkaar en maken graag covers van leuke liedjes. Ook zijn we bezig met het schrijven van eigen liedjes. "
+                        android:padding="10dp" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Overige details"
+                        android:textStyle="bold"/>
+
+                    <EditText
+                        android:id="@+id/editText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_edittext"
+                        android:hint="@string/edit_text_hint4"
+                        android:padding="1dp" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editText1"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="+31 6 01 23 45 66 "
+                android:drawableStart="@drawable/phone"
+                android:drawablePadding="20dp"
+                android:padding="10dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="100dp">
+
+                <EditText
+                    android:id="@+id/editText3"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="8dp"
+                    android:background="@drawable/circle_background"
+                    android:drawableStart="@drawable/instagram_fill"
+                    android:drawablePadding="20dp"
+                    android:padding="10dp" />
+
+                <EditText
+                    android:id="@+id/editText4"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/circle_background"
+                    android:drawableStart="@drawable/youtube"
+                    android:drawablePadding="20dp"
+                    android:padding="10dp" />
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/navigation_menu"
+        app:itemIconSize="38dp"
+        app:itemIconTint="@color/white"
+        app:backgroundTint="#93BADD"
+        />
+</RelativeLayout>
+

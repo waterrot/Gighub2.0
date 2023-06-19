@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="0dp"
+        android:background="#93BADD" >
+    </FrameLayout>
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_height="221dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="0dp" />
+
+
+            <TextView
+                android:id="@+id/textViewtitel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/videoView"
+                android:layout_marginTop="16dp"
+                android:text="Hound Dog Duo"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:textStyle="bold"                />
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="15dp"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="thehounddogduo"
+                android:textSize="12sp"
+                android:textStyle="italic" />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="duo"
+                            android:layout_marginEnd="30dp"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="10dp"
+                            android:padding="4dp"
+                            android:backgroundTint="#9E4FC6"
+                            android:textSize="11sp"
+                            />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="bass"
+                            android:layout_marginEnd="30dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="10dp"
+                            android:padding="4dp"
+                            android:backgroundTint="#9E4FC6"
+                            android:textSize="11sp"/>
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="30dp"
+                            android:text="guitar"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="10dp"
+                            android:padding="4dp"
+                            android:backgroundTint="#9E4FC6"
+                            android:textSize="11sp"/>
+
+                    </LinearLayout>
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="Wie zijn wij?"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/editTextwiezijnwij"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:hint="Wij zijn het Hound Dog Duo. Bert speelt op de contrabas en Paul zingt en speelt de gitaar. Samen worden we vaak ingehuurd bij cafés en gaan we de tafels langs om een liedje te spelen. De gasten krijgen een menu kaart met ons repertoire en kunnen daar een nummer kiezen die we voor hun gaan spelen. Dit zorgt voor een top sfeer en het is erg gezellig. "
+                        android:padding="10dp"
+                        android:fontFamily="sans-serif" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="Ervaring"
+                        android:textStyle="bold"/>
+
+                    <EditText
+                        android:id="@+id/editTextervaring"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:hint="We spelen al erg vaak samen. Bert heeft vroeger op het conservatorium gezeten en Paul zit al lang in de muziekwereld. We treden vaak op in cafés en soms ook voor een wat groter publiek, dan vragen we wel vaak onze pianist erbij.   "
+                        android:padding="10dp" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Overige details"
+                        android:textStyle="bold"/>
+
+                    <EditText
+                        android:id="@+id/editText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_edittext"
+                        android:hint="@string/edit_text_hint7"
+                        android:padding="1dp" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editText1"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="+31 6 01 23 45 66 "
+                android:drawableStart="@drawable/phone"
+                android:drawablePadding="20dp"
+                android:padding="10dp" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="150dp">
+
+
+
+                <EditText
+                    android:id="@+id/editText4"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:background="@drawable/circle_background"
+                    android:drawableStart="@drawable/youtube"
+                    android:drawablePadding="20dp"
+                    android:padding="10dp" />
+
+
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/navigation_menu"
+        app:itemIconSize="38dp"
+        app:itemIconTint="@color/white"
+        app:backgroundTint="#93BADD"
+        />
+</RelativeLayout>

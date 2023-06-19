@@ -58,5 +58,13 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, ArtistHomeActivity::class.java)
             startActivity(intent)
         }
+
+        /* go to login */
+        val buttonGoToLogin = findViewById<Button>(R.id.buttonGoToLogin)
+
+        buttonGoToLogin.setOnClickListener {
+            val intent = Intent(this, LoginActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

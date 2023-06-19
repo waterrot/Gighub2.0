@@ -1,0 +1,279 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="0dp"
+        android:background="#93BADD" >
+    </FrameLayout>
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+            <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="match_parent"
+                android:layout_height="221dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                />
+
+
+            <TextView
+                android:id="@+id/TitelHeadSouth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/videoView"
+                android:layout_marginTop="16dp"
+                android:text="Head South"
+                android:textSize="24sp"
+                android:gravity="center"
+                android:textStyle="bold"                />
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:text="headsouth"
+                android:textStyle="italic"
+                android:textSize="12sp"
+                android:gravity="center"
+                />
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="16dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="rock"
+                            android:layout_marginEnd="30dp"
+                            android:layout_marginStart="30dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="10dp"
+                            android:padding="4dp"
+                            android:backgroundTint="#9E4FC6"
+                            android:textSize="11sp"
+                            />
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="punk"
+                            android:layout_marginEnd="30dp"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="10dp"
+                            android:padding="4dp"
+                            android:backgroundTint="#9E4FC6"
+                            android:textSize="11sp"/>
+
+                        <Button
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="30dp"
+                            android:text="jeugd"
+                            android:layout_marginBottom="8dp"
+                            android:layout_marginTop="10dp"
+                            android:padding="4dp"
+                            android:backgroundTint="#9E4FC6"
+                            android:textSize="11sp"/>
+
+                    </LinearLayout>
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="Wie zijn wij?"
+                        android:textStyle="bold" />
+
+                    <EditText
+                        android:id="@+id/Textwiezijnwij"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:hint="Hallo! Wij zijn een jonge band genaamd Head South. Onze band bestaat uit 4 leden: Brent op de gitaar, Lars op de drum, Jop op de basgitaar en Kaya aan de microfoon. Wij spelen voornamelijk rock en punk, maar we hebben een breed repertoire en houden erg van nieuwe uitdagingen. Hallo! Wij zijn een jonge band genaamd Head South. Onze band bestaat uit 4 leden: Brent op de gitaar, Lars op de drum, Jop op de basgitaar en Kaya aan de microfoon. Wij spelen voornamelijk rock en punk, maar we hebben een breed repertoire en houden erg van nieuwe uitdagingen. "
+                        android:padding="10dp"
+                        android:fontFamily="sans-serif" />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="Ervaring"
+                        android:textStyle="bold"/>
+
+                    <EditText
+                        android:id="@+id/editText"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="1dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/rounded_edittext"
+                        android:hint="Brent studeert zelf muziek op Artez. Hoewel zijn eerste instrument de basgitaar is, vindt hij het leuker om gitaar te spelen. Hij heeft veel podium ervaring en treedt graag op. Lars speelt al heel lang drum. Hij is al sinds het ontstaan van de band lid en doet het nog steeds met veel plezier. Jop heeft jarenlang op drumles gezeten en is in zijn vroege tienerjaren overgestapt naar de basgitaar. Kaya heeft al vaak opgetreden en vindt het ook erg leuk om met een band te spelen. Als Head South hebben we al vaak opgetreden. Gluren bij de Buren en Struinen door de Tuinen vallen bij ons altijd erg in de smaak. Ook worden we voor muziekavonden gevraagd en hebben laatst nog in een voorprogramma gespeeld in het gemeentehuis van Ermelo."
+                        android:padding="10dp" />
+
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:cardBackgroundColor="@android:color/white"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="8dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="48dp"
+                        android:text="Overige details"
+                        android:textStyle="bold"/>
+
+                    <EditText
+                        android:id="@+id/textoverigedetails"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/rounded_edittext"
+                        android:hint="@string/edit_text_hint"
+                        android:padding="1dp" />
+
+
+                    </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+
+
+
+
+
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textoverigedetails"
+                android:layout_marginTop="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/rounded_edittext"
+                android:hint="+31 6 01 23 45 66 "
+                android:drawableStart="@drawable/phone"
+                android:drawablePadding="20dp"
+                android:padding="10dp" />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+
+                    <EditText
+                        android:id="@+id/editText3"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_below="@id/editText2"
+                        android:layout_marginStart="165dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="16dp"
+                        android:background="@drawable/circle_background"
+                        android:drawableStart="@drawable/instagram_fill"
+                        android:drawablePadding="20dp"
+                        android:padding="10dp" />
+
+
+                </LinearLayout>
+
+
+
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:menu="@menu/navigation_menu"
+        app:itemIconSize="38dp"
+        app:itemIconTint="@color/white"
+        app:backgroundTint="#93BADD"
+        />
+</RelativeLayout>
+
