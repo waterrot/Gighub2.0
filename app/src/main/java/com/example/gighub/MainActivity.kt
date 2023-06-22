@@ -67,7 +67,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(intent)
         }
 
-        /* go to discovery */
+        /* go to discovery3 */
         val buttonGoToDiscovery = findViewById<Button>(R.id.buttonGoToDiscovery)
 
         buttonGoToDiscovery.setOnClickListener {

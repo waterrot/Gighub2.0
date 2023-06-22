@@ -61,10 +61,12 @@
         android:background="@drawable/rounded_edittext"
         android:hint="Adres.."
         android:padding="10dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@id/editTextUsername"
-        tools:layout_editor_absoluteX="75dp"
-        tools:layout_editor_absoluteY="459dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.465"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView3"
+        app:layout_constraintVertical_bias="0.557"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -74,10 +76,12 @@
         android:background="@drawable/rounded_edittext"
         android:hint="Wachtwoord.."
         android:padding="10dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@id/editTextEmail"
-        tools:layout_editor_absoluteX="75dp"
-        tools:layout_editor_absoluteY="538dp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.465"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView3"
+        app:layout_constraintVertical_bias="0.671"
         tools:ignore="MissingConstraints" />
 
     <EditText
@@ -87,23 +91,28 @@
         android:background="@drawable/rounded_edittext"
         android:hint="Bevestig wachtwoord.."
         android:padding="10dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@id/editTextPassword"
-        tools:layout_editor_absoluteX="75dp"
-        tools:layout_editor_absoluteY="617dp"
+        app:layout_constraintBottom_toBottomOf="@+id/linearLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.465"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.761"
         tools:ignore="MissingConstraints" />
 
     <EditText
         android:id="@+id/editTextDateOfBirth"
         android:layout_width="250dp"
         android:layout_height="48dp"
+        android:layout_marginTop="16dp"
         android:background="@drawable/rounded_edittext"
         android:hint="Geboortedatum.."
         android:padding="10dp"
-        android:layout_marginTop="16dp"
-        app:layout_constraintTop_toBottomOf="@id/editTextConfirmPassword"
-        tools:layout_editor_absoluteX="75dp"
-        tools:layout_editor_absoluteY="696dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.465"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.818"
         tools:ignore="MissingConstraints" />
 
     <TextView
@@ -114,18 +123,24 @@
         android:textColor="#333377"
         android:textSize="20sp"
         android:textStyle="bold"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="125dp"
-        tools:layout_editor_absoluteY="621dp" />
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.879"
+        tools:ignore="MissingConstraints" />
 
     <LinearLayout
         android:id="@+id/linearLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardView3"
+        app:layout_constraintVertical_bias="0.976"
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="100dp"
-        tools:layout_editor_absoluteY="657dp">
+        tools:layout_editor_absoluteX="33dp">
 
         <Button
             android:layout_width="140dp"
