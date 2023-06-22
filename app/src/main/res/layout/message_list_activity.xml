@@ -10,17 +10,26 @@
         android:id="@+id/layout_group_chat"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:minHeight="?attr/actionBarSize"
         android:fitsSystemWindows="true"
         android:orientation="vertical"
+        android:background="#93BADD"
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar_gchannel"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
+            android:layout_height="56dp"
             android:theme="@style/Widget.AppCompat.Toolbar"
             app:popupTheme="@style/Theme.AppCompat.Light">
 
+            <ImageButton
+                android:id="@+id/imageButton"
+                android:contentDescription="back button"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_margin="4dp"
+                app:srcCompat="@android:drawable/ic_menu_revert" />
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -28,7 +37,7 @@
         android:id="@+id/chatListMessages"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="8dp">
+        android:layout_marginTop="58dp">
 
         <include layout="@layout/chat_send_message" />
     </LinearLayout>
