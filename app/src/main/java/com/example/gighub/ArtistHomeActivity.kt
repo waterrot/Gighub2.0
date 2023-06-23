@@ -18,6 +18,7 @@ class ArtistHomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.homepageartists)
+        supportActionBar?.hide()
 
         loadFragment(ChatFragment())
         bottomNav = findViewById(R.id.bottomNavigationView)

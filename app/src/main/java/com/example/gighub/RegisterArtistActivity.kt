@@ -1,8 +1,6 @@
 package com.example.gighub
 
-import android.content.Intent
 import android.os.Bundle
-import android.widget.TextView
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
@@ -14,17 +12,9 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.gighub.ui.theme.GighubTheme
 
-class RegisterActivity : ComponentActivity() {
+class RegisterArtistActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.registreerpagina)
-
-        /* go to make account artist */
-        val buttonGoToMakeAccountArtist = findViewById<TextView>(R.id.btn_artiest_account_create)
-
-        buttonGoToMakeAccountArtist.setOnClickListener {
-            val intent = Intent(this, RegisterArtistActivity::class.java)
-            startActivity(intent)
-        }
+        setContentView(R.layout.fragment_register_artist)
     }
 }

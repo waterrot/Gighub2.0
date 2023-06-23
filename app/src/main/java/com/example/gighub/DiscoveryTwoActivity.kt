@@ -10,13 +10,13 @@ class DiscoveryTwoActivity : ComponentActivity() {
     @SuppressLint("MissingInflatedId")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.discovery)
+        setContentView(R.layout.discovery2)
 
         /* Give it a star */
         val giveItStar = findViewById<ImageView>(R.id.giveItAStar)
 
         giveItStar.setOnClickListener {
-            val intent = Intent(this, DiscoveryTwoLikeActivity::class.java)
+            val intent = Intent(this, DiscoveryTwoFavoriteActivity::class.java)
             startActivity(intent)
         }
 
@@ -24,7 +24,7 @@ class DiscoveryTwoActivity : ComponentActivity() {
         val makeFavorite = findViewById<ImageView>(R.id.goFavorite)
 
         makeFavorite.setOnClickListener {
-            val intent = Intent(this, DiscoveryTwoFavoriteActivity::class.java)
+            val intent = Intent(this, DiscoveryTwoLikeActivity::class.java)
             startActivity(intent)
         }
 

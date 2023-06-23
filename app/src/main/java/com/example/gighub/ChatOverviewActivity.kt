@@ -1,6 +1,9 @@
 package com.example.gighub
 
 import android.os.Bundle
+import android.widget.ImageView
+import android.widget.RelativeLayout
+import android.widget.TextView
 import androidx.activity.ComponentActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -21,5 +24,13 @@ class ChatOverviewActivity : ComponentActivity() {
         val chatListRecyclerView = findViewById<RecyclerView>(R.id.chatList)
         chatListRecyclerView.layoutManager = LinearLayoutManager(this)
         chatListRecyclerView.adapter = ChatAdapter(chatData)
+
+        /* go to chatting */
+        val goChatting = findViewById<RecyclerView>(R.id.chatList)
+
+        goChatting.setOnClickListener {
+            val intent = android.content.Intent(this, ChatActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

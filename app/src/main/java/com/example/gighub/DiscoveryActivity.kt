@@ -7,9 +7,9 @@ import androidx.activity.ComponentActivity
 class DiscoveryActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.discovery2)
+        setContentView(R.layout.discovery)
 
-        /* go to discovery3 page 2 */
+        /* go to discovery2 page 2 */
         val buttonGoToDiscoveryTwo = findViewById<ImageView>(R.id.goNextDiscovery)
 
         buttonGoToDiscoveryTwo.setOnClickListener {

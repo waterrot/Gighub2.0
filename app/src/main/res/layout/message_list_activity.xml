@@ -17,7 +17,7 @@
         app:layout_constraintTop_toTopOf="parent">
 
         <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar_gchannel"
+            android:id="@+id/toolbar_channel"
             android:layout_width="match_parent"
             android:layout_height="56dp"
             android:theme="@style/Widget.AppCompat.Toolbar"
@@ -28,8 +28,11 @@
                 android:contentDescription="back button"
                 android:layout_width="48dp"
                 android:layout_height="48dp"
+                android:scaleType="fitCenter"
                 android:layout_margin="4dp"
-                app:srcCompat="@android:drawable/ic_menu_revert" />
+                android:background="#93BADD"
+                android:src="@drawable/return_button"
+                android:onClick="onBackButtonClicked"/>
         </androidx.appcompat.widget.Toolbar>
     </com.google.android.material.appbar.AppBarLayout>
 
@@ -37,7 +40,7 @@
         android:id="@+id/chatListMessages"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="58dp">
+        android:layout_marginTop="40dp">
 
         <include layout="@layout/chat_send_message" />
     </LinearLayout>

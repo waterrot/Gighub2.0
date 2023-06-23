@@ -13,6 +13,11 @@
         android:theme="@style/Theme.Gighub"
         tools:targetApi="31">
         <activity
+            android:name=".RegisterArtistActivity"
+            android:exported="false"
+            android:label="@string/title_activity_register_artist"
+            android:theme="@style/Theme.Gighub" />
+        <activity
             android:name=".ProfileOneActivity"
             android:exported="false"
             android:label="@string/title_activity_profile_one"
