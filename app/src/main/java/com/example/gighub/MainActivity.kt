@@ -21,19 +21,8 @@ class MainActivity : AppCompatActivity() {
         val view = binding.root
         setContentView(view)
 
-        val navView: BottomNavigationView = binding.navView
 
-        val navController = supportFragmentManager.findFragmentById(R.id.nav_host_fragment_activity_main)?.findNavController()
-        // Passing each menu ID as a set of Ids because each
-        // menu should be considered as top-level destinations.
-        val appBarConfiguration = AppBarConfiguration(setOf(
-            R.id.navigation_home, R.id.navigation_dashboard, R.id.navigation_notifications))
-        if (navController != null) {
-            setupActionBarWithNavController(navController, appBarConfiguration)
-        }
-        if (navController != null) {
-            navView.setupWithNavController(navController)
-        }
+
 
         /* go to chat */
         val buttonToChat = findViewById<Button>(R.id.buttonGoToChat)

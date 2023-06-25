@@ -8,11 +8,18 @@ import androidx.activity.ComponentActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.gighub.ui.theme.GighubTheme
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class ChatOverviewActivity : ComponentActivity() {
+
+    lateinit var bottomNav: BottomNavigationView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.chat_overview)
+
+        /* Navbar */
+        bottomNav = findViewById(R.id.bottomNavigationView)
+        BottomNavigationHelper.setupBottomNavigation(this, bottomNav)
 
         val chatData = listOf(
             Contact("Margiet", "Hi, about last night..."),

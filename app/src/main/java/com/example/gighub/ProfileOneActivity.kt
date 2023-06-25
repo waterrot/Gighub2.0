@@ -11,10 +11,16 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.gighub.ui.theme.GighubTheme
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class ProfileOneActivity : ComponentActivity() {
+    lateinit var bottomNav: BottomNavigationView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.profilepageheadsouth)
+
+        /* Navbar */
+        bottomNav = findViewById(R.id.bottomNavigationView)
+        BottomNavigationHelper.setupBottomNavigation(this, bottomNav)
     }
 }
