@@ -3,64 +3,28 @@ package com.example.gighub
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.navigation.fragment.findNavController
-import androidx.navigation.ui.AppBarConfiguration
-import androidx.navigation.ui.setupActionBarWithNavController
-import androidx.navigation.ui.setupWithNavController
-import com.example.gighub.databinding.ActivityMainBinding
-import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class MainActivity : AppCompatActivity() {
-
-    private lateinit var binding: ActivityMainBinding
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        val view = binding.root
-        setContentView(view)
+        setContentView(R.layout.main_activity)
+        supportActionBar?.hide()
 
-
-
-
-        /* go to chat */
-        val buttonToChat = findViewById<Button>(R.id.buttonGoToChat)
-
-        buttonToChat.setOnClickListener {
-            val intent = Intent(this, ChatOverviewActivity::class.java)
-            startActivity(intent)
-        }
-
-        /* go to chatting */
-        val buttonGoToChatting = findViewById<Button>(R.id.buttonGoToChatting)
-
-        buttonGoToChatting.setOnClickListener {
-            val intent = Intent(this, ChatActivity::class.java)
-            startActivity(intent)
-        }
-
-        /* go to Home of the artist */
-        val buttonGoToHomeArtist = findViewById<Button>(R.id.buttonGoToHomeArtist)
+        /* go to login */
+        val buttonGoToHomeArtist = findViewById<Button>(R.id.buttonLoginArtist)
 
         buttonGoToHomeArtist.setOnClickListener {
             val intent = Intent(this, ArtistHomeActivity::class.java)
             startActivity(intent)
         }
 
-        /* go to login */
-        val buttonGoToLogin = findViewById<Button>(R.id.buttonGoToLogin)
+        /* go to register */
+        val buttonGoToRegister = findViewById<TextView>(R.id.linkRegister)
 
-        buttonGoToLogin.setOnClickListener {
-            val intent = Intent(this, LoginActivity::class.java)
-            startActivity(intent)
-        }
-
-        /* go to discovery3 */
-        val buttonGoToDiscovery = findViewById<Button>(R.id.buttonGoToDiscovery)
-
-        buttonGoToDiscovery.setOnClickListener {
-            val intent = Intent(this, DiscoveryActivity::class.java)
+        buttonGoToRegister.setOnClickListener {
+            val intent = Intent(this, RegisterActivity::class.java)
             startActivity(intent)
         }
     }
