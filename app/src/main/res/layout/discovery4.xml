@@ -3,8 +3,6 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-
-
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
         android:layout_width="match_parent"
@@ -19,7 +17,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/band2"
+        android:src="@drawable/band1"
         android:scaleType="centerCrop" />
 
     <ImageView
@@ -42,17 +40,18 @@
             android:layout_gravity="center">
 
             <ImageView
-                android:layout_width="56dp"
+                android:id="@+id/goToProfile"
+                android:layout_width="60dp"
                 android:layout_height="56dp"
-                android:src="@drawable/profile_pifcture2"
                 android:layout_marginBottom="16dp"
-                android:padding="8dp" />
+                android:padding="8dp"
+                android:src="@drawable/profile_picture1" />
 
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Joe Cocker"
+                android:text="FWB Band"
                 android:textColor="#FFFFFF"
                 android:background="#80000000"
                 android:textSize="10sp"
@@ -74,7 +73,6 @@
             android:id="@+id/starIcon"
             android:layout_width="56dp"
             android:layout_height="56dp"
-            android:contentDescription="star icon"
             android:src="@drawable/star_svgrepo_com"
             android:padding="8dp"
             android:clickable="true"
@@ -93,7 +91,6 @@
             android:id="@+id/heartIcon"
             android:layout_width="56dp"
             android:layout_height="56dp"
-            android:contentDescription="heart icon"
             android:src="@drawable/heart_svgrepo_com"
             android:padding="8dp"
             android:clickable="true"
@@ -101,14 +98,12 @@
     </FrameLayout>
 
     <ImageView
-        android:id="@+id/goNextDiscovery"
         android:layout_width="72dp"
         android:layout_height="72dp"
         android:src="@drawable/next_svgrepo_com"
         android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
         android:paddingRight="32dp" />
-
 
     <ImageButton
         android:id="@+id/imageButton"
@@ -120,5 +115,6 @@
         android:background="@android:color/transparent"
         android:src="@drawable/return_button"
         android:onClick="onBackButtonClicked"/>
+
 
 </RelativeLayout>

@@ -4,6 +4,7 @@ import android.os.Bundle
 import android.view.View
 import android.widget.ImageView
 import androidx.activity.ComponentActivity
+import changeImage
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 class DiscoveryTwoActivity : ComponentActivity() {
