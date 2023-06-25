@@ -70,11 +70,13 @@
         android:paddingBottom="128dp">
 
         <ImageView
-            android:id="@+id/goFavorite"
+            android:id="@+id/starIcon"
             android:layout_width="56dp"
             android:layout_height="56dp"
             android:src="@drawable/star_svgrepo_com"
-            android:padding="8dp" />
+            android:padding="8dp"
+            android:clickable="true"
+            android:onClick="ChangeImage"/>
     </FrameLayout>
 
     <FrameLayout
@@ -86,11 +88,13 @@
         android:paddingBottom="128dp">
 
         <ImageView
-            android:id="@+id/giveItAStar"
+            android:id="@+id/heartIcon"
             android:layout_width="56dp"
             android:layout_height="56dp"
             android:src="@drawable/heart_svgrepo_com"
-            android:padding="8dp" />
+            android:padding="8dp"
+            android:clickable="true"
+            android:onClick="ChangeImage"/>
     </FrameLayout>
 
     <ImageView

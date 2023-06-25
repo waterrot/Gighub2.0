@@ -16,21 +16,14 @@ class DiscoveryTwoActivity : ComponentActivity() {
         var bottomNav: BottomNavigationView = findViewById(R.id.bottomNavigationView)
         BottomNavigationHelper.setupBottomNavigation(this, bottomNav)
 
-        /* Give it a star */
-        val giveItStar = findViewById<ImageView>(R.id.giveItAStar)
+        /* Give a profile a star */
+        val giveStar = findViewById<ImageView>(R.id.starIcon)
+        giveStar.setOnClickListener { changeImage(giveStar, R.drawable.star_svgrepo_com, R.drawable.yellow_star) }
 
-        giveItStar.setOnClickListener {
-            val intent = Intent(this, DiscoveryTwoFavoriteActivity::class.java)
-            startActivity(intent)
-        }
+        /* Give a profile a heart */
+        val giveHeart = findViewById<ImageView>(R.id.heartIcon)
+        giveHeart.setOnClickListener { changeImage(giveHeart, R.drawable.heart_svgrepo_com, R.drawable.red_heart_icon) }
 
-        /* Make it favorite */
-        val makeFavorite = findViewById<ImageView>(R.id.goFavorite)
-
-        makeFavorite.setOnClickListener {
-            val intent = Intent(this, DiscoveryTwoLikeActivity::class.java)
-            startActivity(intent)
-        }
 
         /* Go to profile */
         val goProfile = findViewById<ImageView>(R.id.goToProfile)

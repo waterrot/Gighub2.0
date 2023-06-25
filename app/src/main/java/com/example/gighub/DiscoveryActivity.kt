@@ -11,6 +11,14 @@ class DiscoveryActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.discovery)
 
+        /* Give a profile a star */
+        val giveStar = findViewById<ImageView>(R.id.starIcon)
+        giveStar.setOnClickListener { changeImage(giveStar, R.drawable.star_svgrepo_com, R.drawable.yellow_star) }
+
+        /* Give a profile a heart */
+        val giveHeart = findViewById<ImageView>(R.id.heartIcon)
+        giveHeart.setOnClickListener { changeImage(giveHeart, R.drawable.heart_svgrepo_com, R.drawable.red_heart_icon) }
+
         /* Navbar */
         var bottomNav: BottomNavigationView = findViewById(R.id.bottomNavigationView)
         BottomNavigationHelper.setupBottomNavigation(this, bottomNav)
