@@ -1,0 +1,435 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="0dp"
+        android:background="#93BADD" >
+    </FrameLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        app:backgroundTint="#93BADD"
+        app:itemIconSize="38dp"
+        app:itemIconTint="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/navigation_menu" />
+
+    <!-- topbar -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_alignParentTop="true">
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="start|top"
+            android:src="@drawable/uitlog"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="12dp"
+            android:layout_gravity="center|top"
+            android:text="                       Bar Mash"
+            android:layout_marginTop="8dp"/>
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_gravity="end|top"
+            android:src="@drawable/editprofile"
+            android:layout_marginEnd="12dp"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+
+    <!-- scrolling through content -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="barmashgighub"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textStyle="italic"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+
+
+            <!-- First CardView -->
+            <androidx.cardview.widget.CardView
+                android:layout_width="378dp"
+                android:layout_height="175dp"
+                android:layout_marginTop="35dp"
+                android:layout_marginStart="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="#FFFFFF">
+
+                <!-- Content of the first CardView -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/logoBarOne"
+                        android:layout_width="120dp"
+                        android:layout_height="110dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/barmashlogo" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/logoBarOne"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="12dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/mainTextViewOne"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:text="Rockers gezocht voor Bar Mash!"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:textColor="#333377"
+                             />
+
+                        <Button
+                            android:id="@+id/btnChatOne"
+                            android:layout_width="155dp"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/logoBarOne"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="1dp"
+                            android:backgroundTint="#93BADD"
+                            android:text="Chat"
+                            android:textColor="#000000" />
+                        <Button
+                            android:id="@+id/btnApplyOne"
+                            android:layout_width="155dp"
+                            android:layout_height="50dp"
+                            android:layout_below="@id/logoBarOne"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="1dp"
+                            android:text="Aanmeldingen"
+                            android:backgroundTint="#C3ADCE"
+                            android:textColor="#000000"/>
+
+
+
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnDateOne"
+                        android:layout_width="120dp"
+                        android:layout_height="48dp"
+                        android:layout_below="@id/logoBarOne"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="4dp"
+                        android:text="14/04"
+                        android:textSize="16sp"
+                        android:backgroundTint="#C3ADCE"/>
+
+
+
+
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="378dp"
+                android:layout_height="175dp"
+                android:layout_marginTop="225dp"
+                android:layout_marginStart="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="#FFFFFF">
+
+                <!-- Content of the first CardView -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/logoBarTwo"
+                        android:layout_width="120dp"
+                        android:layout_height="110dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/barmashlogo" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/logoBarTwo"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="12dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/mainTextViewTwo"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:text="Avond van de JAZZ bij Bar Mash"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:textColor="#333377"
+                            />
+
+                        <Button
+                            android:id="@+id/btnChatTwo"
+                            android:layout_width="155dp"
+                            android:layout_height="50dp"
+                            android:layout_below="@id/logoBarTwo"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="1dp"
+                            android:backgroundTint="#93BADD"
+                            android:text="Chat"
+                            android:textColor="#000000" />
+
+                        <Button
+                            android:id="@+id/btnApplyTwo"
+                            android:layout_width="155dp"
+                            android:layout_height="50dp"
+                            android:layout_below="@id/logoBarTwo"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="1dp"
+                            android:backgroundTint="#C3ADCE"
+                            android:text="Aanmeldingen"
+                            android:textColor="#000000" />
+
+
+
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnDateTwo"
+                        android:layout_width="120dp"
+                        android:layout_height="48dp"
+                        android:layout_below="@id/logoBarTwo"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="4dp"
+                        android:text="10/09"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:backgroundTint="#C3ADCE"/>
+
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="378dp"
+                android:layout_height="175dp"
+                android:layout_marginTop="415dp"
+                android:layout_marginStart="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="#FFFFFF">
+
+                <!-- Content of the third CardView -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/logoBarThree"
+                        android:layout_width="120dp"
+                        android:layout_height="110dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/barmashlogo" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/logoBarThree"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="12dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/mainTextViewThree"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:text="Open avond Bar Mash!"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:textColor="#333377"
+                            />
+                        <Button
+                            android:id="@+id/btnChatThree"
+                            android:layout_width="155dp"
+                            android:layout_height="50dp"
+                            android:layout_below="@id/logoBarThree"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="1dp"
+                            android:text="Chat"
+                            android:backgroundTint="#93BADD"
+                            android:textColor="#000000"/>
+                        <Button
+                            android:id="@+id/btnApplyThree"
+                            android:layout_width="155dp"
+                            android:layout_height="50dp"
+                            android:layout_below="@id/logoBarThree"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="1dp"
+                            android:text="Aanmeldingen"
+                            android:backgroundTint="#C3ADCE"
+                            android:textColor="#000000"/>
+
+
+
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnDateThree"
+                        android:layout_width="120dp"
+                        android:layout_height="48dp"
+                        android:layout_below="@id/logoBarThree"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="4dp"
+                        android:text="31/11"
+                        android:textStyle="bold"
+                        android:textSize="16sp"
+                        android:backgroundTint="#C3ADCE"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="378dp"
+                android:layout_height="175dp"
+                android:layout_marginTop="605dp"
+                android:layout_marginBottom="75dp"
+                android:layout_marginStart="16dp"
+                app:cardCornerRadius="16dp"
+                app:cardBackgroundColor="#FFFFFF">
+
+                <!-- Content of the third CardView -->
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/iconImageView"
+                        android:layout_width="120dp"
+                        android:layout_height="110dp"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/barmashlogo" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toEndOf="@id/iconImageView"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="12dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/mainTextViewFour"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:text="Open avond Bar Mash!"
+                            android:textStyle="bold"
+                            android:textSize="20sp"
+                            android:textColor="#333377"
+                            />
+                        <Button
+                            android:id="@+id/btnChatFour"
+                            android:layout_width="155dp"
+                            android:layout_height="50dp"
+                            android:layout_below="@id/iconImageView"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="1dp"
+                            android:text="Chat"
+                            android:backgroundTint="#93BADD"
+                            android:textColor="#000000"/>
+                        <Button
+                            android:id="@+id/btnApplyFour"
+                            android:layout_width="155dp"
+                            android:layout_height="50dp"
+                            android:layout_below="@id/iconImageView"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="1dp"
+                            android:text="Aanmeldingen"
+                            android:backgroundTint="#C3ADCE"
+                            android:textColor="#000000"/>
+
+                    </LinearLayout>
+
+                    <Button
+                        android:id="@+id/btnDateFour"
+                        android:layout_width="120dp"
+                        android:layout_height="48dp"
+                        android:layout_below="@id/iconImageView"
+                        android:layout_marginStart="12dp"
+                        android:layout_marginTop="4dp"
+                        android:text="31/11"
+                        android:textSize="16dp"
+                        android:textStyle="bold"
+                        android:backgroundTint="#C3ADCE"/>
+
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </FrameLayout>
+
+    </ScrollView>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/floatingActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:contentDescription="Button to add a new event"
+        android:src="@android:drawable/ic_menu_add"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="85dp"
+        android:layout_marginEnd="25dp"
+        android:backgroundTint="#C3ADCE"
+        app:rippleColor="@color/white"
+        android:clickable="true"/>
+
+</RelativeLayout>
