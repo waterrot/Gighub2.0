@@ -5,6 +5,7 @@ import android.content.Intent
 import android.os.Bundle
 import android.widget.ImageView
 import androidx.appcompat.app.AppCompatActivity
+import androidx.cardview.widget.CardView
 
 
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -22,11 +23,10 @@ class ArtistHomeActivity : AppCompatActivity() {
         bottomNav = findViewById(R.id.bottomNavigationView)
         BottomNavigationHelper.setupBottomNavigation(this, bottomNav)
 
-        /* go to chat with venue */
-        val goToChatBarMash = findViewById<ImageView>(R.id.iconCompanyHomeArtistOne)
-
-        goToChatBarMash.setOnClickListener {
-            val intent = Intent(this, ChatActivity::class.java)
+        /* go to profile bar */
+        val card1: CardView = findViewById(R.id.card1)
+        card1.setOnClickListener {
+            val intent = Intent(this, ProfileVenueActivity::class.java)
             startActivity(intent)
         }
     }

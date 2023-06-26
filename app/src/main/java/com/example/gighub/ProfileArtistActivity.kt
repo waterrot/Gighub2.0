@@ -2,8 +2,7 @@ package com.example.gighub
 
 import android.content.Intent
 import android.os.Bundle
-import android.view.View
-import android.widget.TextView
+import android.widget.ImageView
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
@@ -14,23 +13,24 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.gighub.ui.theme.GighubTheme
+import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class RegisterActivity : ComponentActivity() {
+class ProfileArtistActivity : ComponentActivity() {
+    lateinit var bottomNav: BottomNavigationView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.registreerpagina)
+        setContentView(R.layout.profile_artist)
 
-        /* go to make account artist */
-        val buttonGoToMakeAccountArtist = findViewById<TextView>(R.id.btn_artiest_account_create)
+        /* Navbar */
+        bottomNav = findViewById(R.id.bottomNavigationView)
+        BottomNavigationHelper.setupBottomNavigation(this, bottomNav)
 
-        buttonGoToMakeAccountArtist.setOnClickListener {
-            val intent = Intent(this, RegisterArtistActivity::class.java)
+        /* go to login screen */
+        val btnLogout = findViewById<ImageView>(R.id.logout)
+
+        btnLogout.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
             startActivity(intent)
         }
-    }
-
-    /* back button */
-    fun onBackButtonClicked(view: View) {
-        finish()
     }
 }

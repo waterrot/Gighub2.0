@@ -26,7 +26,7 @@ class BottomNavigationHelper {
                         true
                     }
                     R.id.nav_to_profile -> {
-                        val intent = Intent(context, ProfileOneActivity::class.java)
+                        val intent = Intent(context, ProfileArtistActivity::class.java)
                         context.startActivity(intent)
                         true
                     }

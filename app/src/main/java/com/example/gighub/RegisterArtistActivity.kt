@@ -1,6 +1,9 @@
 package com.example.gighub
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
+import android.widget.ImageView
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
@@ -23,5 +26,13 @@ class RegisterArtistActivity : ComponentActivity() {
         /* Navbar */
         bottomNav = findViewById(R.id.bottomNavigationView)
         BottomNavigationHelper.setupBottomNavigation(this, bottomNav)
+
+        /* go to home page artist */
+        val btnFinish = findViewById<Button>(R.id.btnFinish)
+
+        btnFinish.setOnClickListener {
+            val intent = Intent(this, ArtistHomeActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

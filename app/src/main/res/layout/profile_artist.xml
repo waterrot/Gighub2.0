@@ -16,6 +16,7 @@
 
 
 
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -24,35 +25,55 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <VideoView
                 android:id="@+id/videoView"
                 android:layout_width="match_parent"
                 android:layout_height="221dp"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentEnd="true"
-                android:layout_marginEnd="0dp" />
+                />
 
 
-            <TextView
-                android:id="@+id/textView1"
+            <RelativeLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_below="@id/videoView"
-                android:layout_marginTop="16dp"
-                android:text="FWB band"
-                android:textSize="24sp"
-                android:gravity="center"
-                android:textStyle="bold"                />
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/logout"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="12dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/uitlog" />
+
+                <TextView
+                    android:id="@+id/TitelHeadSouth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginStart="140dp"
+                    android:layout_marginEnd="100dp"
+                    android:text="Head South"
+                    android:textSize="24sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+
+
 
             <TextView
                 android:id="@+id/linkRegister"
                 android:layout_width="match_parent"
-                android:layout_height="15dp"
-                android:layout_marginTop="16dp"
-                android:gravity="center"
-                android:text="friendswithbenefitsgighub"
+                android:layout_height="wrap_content"
+                android:text="headsouth"
+                android:textStyle="italic"
                 android:textSize="12sp"
-                android:textStyle="italic" />
+                android:gravity="center"
+                />
 
             <androidx.cardview.widget.CardView
                 android:layout_width="match_parent"
@@ -77,7 +98,7 @@
                         <Button
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="classic"
+                            android:text="rock"
                             android:layout_marginEnd="30dp"
                             android:layout_marginStart="30dp"
                             android:layout_marginBottom="8dp"
@@ -90,7 +111,7 @@
                         <Button
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:text="original"
+                            android:text="punk"
                             android:layout_marginEnd="30dp"
                             android:layout_marginBottom="8dp"
                             android:layout_marginTop="10dp"
@@ -102,7 +123,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_marginEnd="30dp"
-                            android:text="party"
+                            android:text="jeugd"
                             android:layout_marginBottom="8dp"
                             android:layout_marginTop="10dp"
                             android:padding="4dp"
@@ -119,14 +140,14 @@
                         android:textStyle="bold" />
 
                     <EditText
-                        android:id="@+id/editText1"
+                        android:id="@+id/Textwiezijnwij"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="1dp"
                         android:layout_marginStart="16dp"
                         android:layout_marginEnd="16dp"
                         android:background="@drawable/rounded_edittext"
-                        android:hint="Wij zijn de Friends With Benefits band! De naam zegt het al een beetje; we zijn een hechte vrienden groep uit Bilthoven. We zijn gevormd uit oud leerlingen van het Nieuwe Lyceum die samen een gezamelijke passie delen: muziek. Wij focussen ons vooral op de oude klassiekers, denk aan bands zoals: Dire Straits, The Beatles, CCR en Queen. Ook spelen we nieuwere nummers van bands zoals: Blof, Maneskin, De Dijk en Acda en de Munnik. "
+                        android:hint="Hallo! Wij zijn een jonge band genaamd Head South. Onze band bestaat uit 4 leden: Brent op de gitaar, Lars op de drum, Jop op de basgitaar en Kaya aan de microfoon. Wij spelen voornamelijk rock en punk, maar we hebben een breed repertoire en houden erg van nieuwe uitdagingen. Hallo! Wij zijn een jonge band genaamd Head South. Onze band bestaat uit 4 leden: Brent op de gitaar, Lars op de drum, Jop op de basgitaar en Kaya aan de microfoon. Wij spelen voornamelijk rock en punk, maar we hebben een breed repertoire en houden erg van nieuwe uitdagingen. "
                         android:padding="10dp"
                         android:fontFamily="sans-serif" />
 
@@ -159,14 +180,14 @@
                         android:textStyle="bold"/>
 
                     <EditText
-                        android:id="@+id/textervaring"
+                        android:id="@+id/editText"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginTop="1dp"
                         android:layout_marginStart="16dp"
                         android:layout_marginEnd="16dp"
                         android:background="@drawable/rounded_edittext"
-                        android:hint="We hebben al meerdere keren in ’T Pothuys opgetreden en worden ook vaak gevraagd voor bruiloften en feestjes.  We zijn al meer dan 5 jaar bij elkaar en maken graag covers van leuke liedjes. Ook zijn we bezig met het schrijven van eigen liedjes. "
+                        android:hint="Brent studeert zelf muziek op Artez. Hoewel zijn eerste instrument de basgitaar is, vindt hij het leuker om gitaar te spelen. Hij heeft veel podium ervaring en treedt graag op. Lars speelt al heel lang drum. Hij is al sinds het ontstaan van de band lid en doet het nog steeds met veel plezier. Jop heeft jarenlang op drumles gezeten en is in zijn vroege tienerjaren overgestapt naar de basgitaar. Kaya heeft al vaak opgetreden en vindt het ook erg leuk om met een band te spelen. Als Head South hebben we al vaak opgetreden. Gluren bij de Buren en Struinen door de Tuinen vallen bij ons altijd erg in de smaak. Ook worden we voor muziekavonden gevraagd en hebben laatst nog in een voorprogramma gespeeld in het gemeentehuis van Ermelo."
                         android:padding="10dp" />
 
 
@@ -195,12 +216,12 @@
 
                     <EditText
                         android:layout_width="match_parent"
-                        android:layout_height="match_parent"
+                        android:layout_height="48dp"
                         android:text="Overige details"
                         android:textStyle="bold"/>
 
                     <EditText
-                        android:id="@+id/editText"
+                        android:id="@+id/textoverigedetails"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:background="@drawable/rounded_edittext"
@@ -221,7 +242,7 @@
                 android:id="@+id/editText2"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_below="@id/editText1"
+                android:layout_below="@id/textoverigedetails"
                 android:layout_marginTop="16dp"
                 android:layout_marginStart="16dp"
                 android:layout_marginEnd="16dp"
@@ -230,41 +251,28 @@
                 android:drawableStart="@drawable/phone"
                 android:drawablePadding="20dp"
                 android:padding="10dp" />
-
-
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:layout_marginStart="100dp"
-                android:layout_marginBottom="80dp">
+                android:orientation="horizontal">
+
 
                 <EditText
                     android:id="@+id/editText3"
                     android:layout_width="70dp"
                     android:layout_height="70dp"
-                    android:layout_marginStart="16dp"
+                    android:layout_below="@id/editText2"
+                    android:layout_marginStart="165dp"
                     android:layout_marginTop="16dp"
-                    android:layout_marginEnd="8dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="80dp"
                     android:background="@drawable/circle_background"
                     android:drawableStart="@drawable/instagram_fill"
                     android:drawablePadding="20dp"
                     android:padding="10dp" />
 
-                <EditText
-                    android:id="@+id/editText4"
-                    android:layout_width="70dp"
-                    android:layout_height="70dp"
-                    android:layout_marginStart="8dp"
-                    android:layout_marginTop="16dp"
-                    android:layout_marginEnd="16dp"
-                    android:background="@drawable/circle_background"
-                    android:drawableStart="@drawable/youtube"
-                    android:drawablePadding="20dp"
-                    android:padding="10dp" />
 
             </LinearLayout>
-
 
 
 

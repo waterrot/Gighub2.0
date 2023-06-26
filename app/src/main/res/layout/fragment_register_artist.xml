@@ -286,11 +286,12 @@
             </LinearLayout>
 
             <Button
-                android:id="@+id/secondButton"
+                android:id="@+id/btnFinish"
                 android:layout_width="150dp"
                 android:layout_height="match_parent"
                 android:layout_marginStart="120dp"
                 android:layout_marginTop="40dp"
+                android:layout_marginBottom="80dp"
                 android:text="Klaar!"
                 android:backgroundTint="#FDFD96"
                 android:textStyle="bold"

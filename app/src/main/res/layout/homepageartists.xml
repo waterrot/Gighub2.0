@@ -105,6 +105,7 @@
 
                 <!-- First CardView -->
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/card1"
                     android:layout_width="match_parent"
                     android:layout_height="190dp"
                     android:layout_marginTop="20dp"
@@ -159,12 +160,12 @@
                             android:layout_below="@id/iconCompanyHomeArtistOne"
                             android:layout_marginStart="12dp"
                             android:layout_marginTop="5dp"
-                            android:text="Apeldoorn"
+                            android:text="Match!!!"
                             android:textSize="10sp"
                             android:textStyle="bold"
                             android:textColor="#ffffff"
                             android:gravity="center"
-                            android:background="#9E4FC6" />
+                            android:background="#039487" />
 
                         <TextView
                             android:id="@+id/buttonDateHomeArtistOne"
@@ -238,12 +239,12 @@
                             android:layout_below="@id/iconCompanyHomeArtistTwo"
                             android:layout_marginStart="12dp"
                             android:layout_marginTop="5dp"
-                            android:text="Arhem"
+                            android:text="In afwachting..."
                             android:textSize="10sp"
                             android:textStyle="bold"
                             android:textColor="#ffffff"
                             android:gravity="center"
-                            android:background="#9E4FC6" />
+                            android:background="#9d9d9d" />
 
                         <TextView
                             android:id="@+id/buttonDateHomeArtistTwo"
@@ -267,6 +268,7 @@
                     android:layout_height="190dp"
                     android:layout_marginTop="20dp"
                     android:layout_marginStart="16dp"
+                    android:layout_marginBottom="80dp"
                     android:layout_marginEnd="16dp"
                     app:cardCornerRadius="16dp"
                     app:cardBackgroundColor="#FFFFFF">
@@ -316,7 +318,7 @@
                             android:layout_below="@id/iconCompanyHomeArtistThree"
                             android:layout_marginStart="12dp"
                             android:layout_marginTop="5dp"
-                            android:text="Apeldoorn"
+                            android:text="Meld je aan!!!"
                             android:textSize="10sp"
                             android:textStyle="bold"
                             android:textColor="#ffffff"
