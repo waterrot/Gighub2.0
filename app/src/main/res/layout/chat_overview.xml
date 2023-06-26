@@ -17,21 +17,56 @@
         app:backgroundTint="#93BADD"
         />
 
-    <!-- Toolbar -->
-    <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
-        android:layout_width="match_parent"
-        android:layout_height="?attr/actionBarSize"
-        android:background="#93BADD"
-        android:elevation="4dp"
-        android:theme="@style/ThemeOverlay.AppCompat.ActionBar" />
+
+
+        <LinearLayout
+            android:id="@+id/headerChat"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:background="#93BADD">
+
+
+            <Button
+                android:id="@+id/filtersButtonHomeArtist"
+                android:layout_width="80dp"
+                android:layout_height="48dp"
+                android:layout_gravity="start|top"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="7dp"
+                android:backgroundTint="#C3ADCE"
+                android:text="filters"
+                android:textColor="#000000"
+                android:textSize="10sp" />
+
+            <EditText
+                android:autofillHints="name"
+                android:inputType="text"
+                android:layout_width="0dp"
+                android:layout_height="48dp"
+                android:layout_weight="1"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:layout_gravity="center|top"
+                android:text=" Zoeken..."
+                android:layout_marginTop="8dp" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="48dp"
+                android:layout_gravity="end|top"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="12dp"
+                android:src="@drawable/bookmark" />
+        </LinearLayout>
+
 
     <!-- Chat List -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/chatList"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/toolbar"
+        android:layout_below="@id/headerChat"
         android:padding="8dp"
         tools:listitem="@layout/item_chat" />
 
@@ -40,7 +75,7 @@
         android:id="@+id/emptyView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_below="@id/toolbar"
+        android:layout_below="@id/headerChat"
         android:gravity="center"
         android:text="No chats available."
         android:textSize="18sp"

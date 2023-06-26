@@ -1,8 +1,10 @@
 package com.example.gighub
 
+import android.content.Context
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
+import android.widget.Button
 import android.widget.TextView
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
@@ -20,17 +22,46 @@ class RegisterActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.registreerpagina)
 
-        /* go to make account artist */
-        val buttonGoToMakeAccountArtist = findViewById<TextView>(R.id.btn_artiest_account_create)
+        val buttonArtist = findViewById<Button>(R.id.btn_artiest_account_create)
+        val buttonVenue = findViewById<Button>(R.id.btn_venue_account_create)
 
-        buttonGoToMakeAccountArtist.setOnClickListener {
-            val intent = Intent(this, RegisterArtistActivity::class.java)
-            startActivity(intent)
+        /* go to login Arist */
+        buttonArtist.setOnClickListener {
+            storeSelectedUser("Artist")
+            navigateToHomeArtist()
+        }
+
+        /* go to login Venue */
+        buttonVenue.setOnClickListener {
+            storeSelectedUser("Venue")
+            navigateToHomeVenue()
         }
     }
 
     /* back button */
     fun onBackButtonClicked(view: View) {
+        finish()
+    }
+
+    /* safe which person is login in */
+    private fun storeSelectedUser(userType: String) {
+        val sharedPreferences = getSharedPreferences("MyPreferences", Context.MODE_PRIVATE)
+        val editor = sharedPreferences.edit()
+        editor.putString("selectedUser", userType)
+        editor.apply()
+    }
+
+    /* go to register artist */
+    private fun navigateToHomeArtist() {
+        val intent = Intent(this, RegisterArtistActivity::class.java)
+        startActivity(intent)
+        finish()
+    }
+
+    /* go to home venue */
+    private fun navigateToHomeVenue() {
+        val intent = Intent(this, VenueHomeActivity::class.java)
+        startActivity(intent)
         finish()
     }
 }

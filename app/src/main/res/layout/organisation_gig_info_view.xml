@@ -24,31 +24,39 @@
                 android:orientation="vertical">
 
 
-                <ImageButton
-                    android:id="@+id/btnReturn"
-                    android:layout_width="48dp"
-                    android:layout_height="48dp"
-                    android:layout_margin="4dp"
-                    android:background="#93BADD"
-                    android:contentDescription="back button"
-                    android:onClick="onBackButtonClicked"
-                    android:scaleType="fitCenter"
-                    android:src="@drawable/return_button" />
-
-                <EditText
-                    android:id="@+id/GigTitle"
-                    android:layout_width="200dp"
+                <LinearLayout
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_below="@id/videoView"
-                    android:layout_marginStart="110dp"
-                    android:layout_marginTop="16dp"
-                    android:gravity="center"
-                    android:text="Voeg hier uw titel toe voor de gig..."
-                    android:textSize="24sp"
-                    android:textStyle="bold" />
+                    android:orientation="horizontal">
+
+
+                    <ImageButton
+                        android:id="@+id/btnReturn"
+                        android:contentDescription="back button"
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:scaleType="fitCenter"
+                        android:layout_margin="4dp"
+                        android:background="#93BADD"
+                        android:src="@drawable/return_button"
+                        android:onClick="onBackButtonClicked"/>
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="200dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/videoView"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginStart="50dp"
+                        android:text="Rockers gezocht voor Bar Mash!"
+                        android:textSize="24sp"
+                        android:gravity="center"
+                        android:textStyle="bold"                />
+
+
+                </LinearLayout>
 
                 <TextView
-                    android:id="@+id/textView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="5dp"
@@ -63,51 +71,17 @@
                     android:layout_marginTop="10dp"
                     android:src="@drawable/barmashlogo" />
 
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginTop="50dp"
-                    android:layout_marginStart="16dp"
-                    android:layout_marginEnd="16dp"
-                    app:cardBackgroundColor="@android:color/white"
-                    app:cardElevation="2dp"
-                    app:cardCornerRadius="16dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-
-
-
-                        <EditText
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:minHeight="48dp"
-                            android:text="Beschrijving"
-                            android:textStyle="bold"/>
-
-                        <EditText
-                            android:id="@+id/description_gig"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="1dp"
-                            android:layout_marginStart="16dp"
-                            android:layout_marginEnd="16dp"
-                            android:background="@drawable/rounded_edittext"
-                            android:hint="Voeg hier een leuke beschrijving voor uw gig toe. Leg uit hoe de gig tot stand is gekomen en wat men kan verwachten tijdens deze gig. Als er verdere informatie nodig is zet dat dan ook in de beschrijving.
-Vergeet daarnaast niet de specificaties van hieronder in te vullen!"
-                            android:padding="10dp" />
-
-
-
-
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
+                <Button
+                    android:id="@+id/buttonChangeColor"
+                    android:layout_width="250dp"
+                    android:layout_height="match_parent"
+                    android:layout_below="@id/iconImageView"
+                    android:layout_marginStart="85dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Ik wil in contact komen!"
+                    android:background="@drawable/button_venue_background"
+                    android:textSize="12sp"
+                    android:textColor="#000000"/>
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
@@ -127,40 +101,96 @@ Vergeet daarnaast niet de specificaties van hieronder in te vullen!"
 
 
 
-                        <EditText
+                        <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
                             android:minHeight="48dp"
-                            android:text="Specificaties"
+                            android:text="Beschrijving"
+                            android:textSize="20sp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="10dp"
                             android:textStyle="bold"/>
 
-                        <EditText
+                        <TextView
                             android:id="@+id/editText"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:minHeight="48dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginEnd="16dp"
                             android:background="@drawable/rounded_edittext"
-                            android:hint="Hier kan je verdere specificaties invullen."
-                            android:padding="1dp" />
+                            android:hint="Elke eerste maandag van de maand (vanaf juli 2023) organiseren we Bennies Unplugged! Een gratis toegankelijke semi-akoestische avond waar de vetste - normaal gesproken hardste - bands van het land zich van hun ‘rustige’ kant laten zien. Vinden we gewoon vet."
+                            android:padding="10dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginEnd="16dp"
+                            android:background="@drawable/rounded_edittext"
+                            android:hint="Bennies in De Bar Mash is de bar/het restaurant in het pand van De Bar Mash - het eerste hostel van Apeldoorn. Dus naast een nieuwe schare aan Apeldoornse fans, kunnen er ook nieuwe (inter)nationale fans in de tent aanwezig zijn! En met een beetje geluk hebben we nog een kamer vrij zodat je naderhand aan kan schuiven bij de bar zonder discussies over wie de Bob is."
+                            android:padding="10dp" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="1dp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginEnd="16dp"
+                            android:background="@drawable/rounded_edittext"
+                            android:hint="Wij regelen het leukste podium én geluidsman van de stad, zodat jij alleen maar op het podium hoeft te klimmen. Bennie d'r bij?"
+                            android:padding="10dp" />
+
+
 
 
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
 
-                <Button
-                    android:id="@+id/GoToEvents"
-                    android:layout_width="150dp"
-                    android:layout_height="match_parent"
-                    android:layout_below="@id/iconImageView"
-                    android:layout_marginStart="120dp"
-                    android:layout_marginTop="40dp"
-                    android:layout_marginBottom="80dp"
-                    android:text="Plaatsen!"
-                    android:backgroundTint="#FDFD96"
-                    android:textStyle="bold"
-                    android:textSize="12sp"
-                    android:textColor="#000000"/>
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_marginBottom="75dp"
+                    app:cardBackgroundColor="@android:color/white"
+                    app:cardElevation="2dp"
+                    app:cardCornerRadius="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="Specificaties"
+                            android:textSize="20sp"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="10dp"
+                            android:textStyle="bold"/>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="16dp"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="15dp"
+                            android:background="@drawable/rounded_edittext"
+                            android:hint="Je moet op tijd komen en je eigen kleren meenemen"
+                            android:padding="1dp" />
+
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
 
 
 
@@ -183,3 +213,4 @@ Vergeet daarnaast niet de specificaties van hieronder in te vullen!"
 
 
 </RelativeLayout>
+

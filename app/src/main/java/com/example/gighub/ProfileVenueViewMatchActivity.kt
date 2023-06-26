@@ -2,26 +2,31 @@ package com.example.gighub
 
 import android.content.Intent
 import android.os.Bundle
-import android.widget.ImageView
+import android.view.View
+import android.widget.Button
 import androidx.activity.ComponentActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class ProfileArtistActivity : ComponentActivity() {
+class ProfileVenueViewMatchActivity : ComponentActivity() {
     lateinit var bottomNav: BottomNavigationView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.profile_artist)
+        setContentView(R.layout.organisation_gig_info_view_match)
 
         /* Navbar */
         bottomNav = findViewById(R.id.bottomNavigationView)
         BottomNavigationHelper.setupBottomNavigation(this, bottomNav)
 
-        /* go to login screen */
-        val btnLogout = findViewById<ImageView>(R.id.logout)
-
-        btnLogout.setOnClickListener {
-            val intent = Intent(this, MainActivity::class.java)
+        /* Send a message to venue */
+        val buttonSendAMessage: Button = findViewById(R.id.buttonSendMessage)
+        buttonSendAMessage.setOnClickListener {
+            val intent = Intent(this, ChatActivity::class.java)
             startActivity(intent)
         }
+    }
+
+    /* back button */
+    fun onBackButtonClicked(view: View) {
+        finish()
     }
 }

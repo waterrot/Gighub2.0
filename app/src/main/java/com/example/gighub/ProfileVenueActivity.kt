@@ -1,6 +1,9 @@
 package com.example.gighub
 
+import android.content.Intent
 import android.os.Bundle
+import android.widget.Button
+import android.widget.ImageView
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
@@ -22,5 +25,21 @@ class ProfileVenueActivity : ComponentActivity() {
         /* Navbar */
         bottomNav = findViewById(R.id.bottomNavigationView)
         BottomNavigationHelper.setupBottomNavigation(this, bottomNav)
+
+        /* go to chat overview page */
+        val btnChat = findViewById<Button>(R.id.goChatOverview)
+
+        btnChat.setOnClickListener {
+            val intent = Intent(this, ChatOverviewActivity::class.java)
+            startActivity(intent)
+        }
+
+        /* go to login screen */
+        val btnLogout = findViewById<ImageView>(R.id.uitlog)
+
+        btnLogout.setOnClickListener {
+            val intent = Intent(this, MainActivity::class.java)
+            startActivity(intent)
+        }
     }
 }

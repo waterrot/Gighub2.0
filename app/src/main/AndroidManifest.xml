@@ -13,6 +13,36 @@
         android:theme="@style/Theme.Gighub"
         tools:targetApi="31">
         <activity
+            android:name=".ArtistsLikedByVenueActivity"
+            android:exported="false"
+            android:label="@string/title_activity_artists_liked_by_venue"
+            android:theme="@style/Theme.Gighub" />
+        <activity
+            android:name=".organisation_gig_info_view_match"
+            android:exported="false"
+            android:label="@string/title_activity_organisation_gig_info_view_match"
+            android:theme="@style/Theme.Gighub" />
+        <activity
+            android:name=".ProfileVenueViewMatchActivity"
+            android:exported="false"
+            android:label="@string/title_activity_profile_venue_view_match"
+            android:theme="@style/Theme.Gighub" />
+        <activity
+            android:name=".ProfileVenueViewActivity"
+            android:exported="false"
+            android:label="@string/title_activity_profile_venue_view"
+            android:theme="@style/Theme.Gighub" />
+        <activity
+            android:name=".VenueAddEventActivity"
+            android:exported="false"
+            android:label="@string/title_activity_venue_add_event"
+            android:theme="@style/Theme.Gighub" />
+        <activity
+            android:name=".VenueHomeActivity"
+            android:exported="false"
+            android:label="@string/title_activity_venue_home"
+            android:theme="@style/Theme.Gighub" />
+        <activity
             android:name=".ProfileVenueActivity"
             android:exported="false"
             android:label="@string/title_activity_profile_venue"

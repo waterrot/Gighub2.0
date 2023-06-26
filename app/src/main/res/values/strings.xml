@@ -28,4 +28,12 @@
     <string name="title_activity_register_artist">RegisterArtistActivity</string>
     <string name="title_activity_profile_artist">ProfileArtistActivity</string>
     <string name="title_activity_profile_venue">ProfileVenueActivity</string>
+    <string name="title_activity_venue_home">VenueHomeActivity</string>
+    <string name="title_activity_venue_add_event">VenueAddEventActivity</string>
+    <string name="title_activity_profile_venue_view">ProfileVenueViewActivity</string>
+    <string name="title_activity_profile_venue_view_match">ProfileVenueViewMatchActivity</string>
+    <string name="title_activity_organisation_gig_info_view_match">
+        organisation_gig_info_view_match
+    </string>
+    <string name="title_activity_artists_liked_by_venue">ArtistsLikedByVenueActivity</string>
 </resources>
