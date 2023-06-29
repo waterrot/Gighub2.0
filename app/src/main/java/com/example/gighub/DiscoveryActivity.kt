@@ -7,10 +7,11 @@ import androidx.activity.ComponentActivity
 import changeImage
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class DiscoveryActivity : ComponentActivity() {
+class DiscoveryActivity : CustomActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.discovery)
+        supportActionBar?.hide()
 
         /* Give a profile a star */
         val giveStar = findViewById<ImageView>(R.id.starIcon)

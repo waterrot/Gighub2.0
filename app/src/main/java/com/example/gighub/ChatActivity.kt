@@ -11,7 +11,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.gighub.ui.theme.GighubTheme
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class ChatActivity : AppCompatActivity() {
+class ChatActivity : CustomActivity() {
 
     lateinit var bottomNav: BottomNavigationView
     override fun onCreate(savedInstanceState: Bundle?) {

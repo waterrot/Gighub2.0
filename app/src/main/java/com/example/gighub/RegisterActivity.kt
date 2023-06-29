@@ -17,10 +17,11 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.gighub.ui.theme.GighubTheme
 
-class RegisterActivity : ComponentActivity() {
+class RegisterActivity : CustomActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.registreerpagina)
+        supportActionBar?.hide()
 
         val buttonArtist = findViewById<Button>(R.id.btn_artiest_account_create)
         val buttonVenue = findViewById<Button>(R.id.btn_venue_account_create)

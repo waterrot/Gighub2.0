@@ -10,12 +10,13 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.gighub.ui.theme.GighubTheme
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class ChatOverviewActivity : ComponentActivity() {
+class ChatOverviewActivity : CustomActivity() {
 
     lateinit var bottomNav: BottomNavigationView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.chat_overview)
+        supportActionBar?.hide()
 
         /* Navbar */
         bottomNav = findViewById(R.id.bottomNavigationView)

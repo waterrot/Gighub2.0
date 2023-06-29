@@ -7,11 +7,12 @@ import androidx.activity.ComponentActivity
 import changeImage
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class DiscoveryTwoActivity : ComponentActivity() {
+class DiscoveryTwoActivity : CustomActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
         setContentView(R.layout.discovery2)
+        supportActionBar?.hide()
 
         /* Navbar */
         var bottomNav: BottomNavigationView = findViewById(R.id.bottomNavigationView)

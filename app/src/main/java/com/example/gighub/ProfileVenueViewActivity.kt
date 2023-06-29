@@ -8,7 +8,7 @@ import android.widget.Button
 import androidx.activity.ComponentActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class ProfileVenueViewActivity : ComponentActivity() {
+class ProfileVenueViewActivity : CustomActivity() {
 
     lateinit var bottomNav: BottomNavigationView
     private lateinit var myButton: Button
@@ -16,6 +16,7 @@ class ProfileVenueViewActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.organisation_gig_info_view)
+        supportActionBar?.hide()
 
         /* Navbar */
         bottomNav = findViewById(R.id.bottomNavigationView)

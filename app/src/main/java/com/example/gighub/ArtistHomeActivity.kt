@@ -10,7 +10,7 @@ import androidx.cardview.widget.CardView
 
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class ArtistHomeActivity : AppCompatActivity() {
+class ArtistHomeActivity : CustomActivity() {
 
     lateinit var bottomNav: BottomNavigationView
 

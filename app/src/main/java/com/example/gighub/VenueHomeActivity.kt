@@ -12,7 +12,7 @@ import androidx.cardview.widget.CardView
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.android.material.floatingactionbutton.FloatingActionButton
 
-class VenueHomeActivity : AppCompatActivity() {
+class VenueHomeActivity : CustomActivity() {
 
     lateinit var bottomNav: BottomNavigationView
 

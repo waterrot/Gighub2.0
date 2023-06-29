@@ -22,6 +22,11 @@ class ArtistsLikedByVenueActivity : AppCompatActivity() {
         supportActionBar?.hide()
 
         /* Navbar */
+        // Modify shared element transition animation
+        window.sharedElementEnterTransition?.excludeTarget(android.R.id.navigationBarBackground, true)
+        window.sharedElementExitTransition?.excludeTarget(android.R.id.navigationBarBackground, true)
+
+
         bottomNav = findViewById(R.id.bottomNavigationView)
         BottomNavigationHelper.setupBottomNavigation(this, bottomNav)
 

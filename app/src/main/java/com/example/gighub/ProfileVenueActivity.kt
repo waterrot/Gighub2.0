@@ -16,11 +16,12 @@ import androidx.compose.ui.tooling.preview.Preview
 import com.example.gighub.ui.theme.GighubTheme
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class ProfileVenueActivity : ComponentActivity() {
+class ProfileVenueActivity : CustomActivity() {
     lateinit var bottomNav: BottomNavigationView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.organisation_gig_info)
+        supportActionBar?.hide()
 
         /* Navbar */
         bottomNav = findViewById(R.id.bottomNavigationView)

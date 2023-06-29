@@ -6,11 +6,12 @@ import android.widget.ImageView
 import androidx.activity.ComponentActivity
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
-class ProfileArtistActivity : ComponentActivity() {
+class ProfileArtistActivity : CustomActivity() {
     lateinit var bottomNav: BottomNavigationView
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.profile_artist)
+        supportActionBar?.hide()
 
         /* Navbar */
         bottomNav = findViewById(R.id.bottomNavigationView)
